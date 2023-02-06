@@ -1,7 +1,15 @@
 {
   "autoload": {
     "psr-4": {
-      "KianlandUsersSort\\": "../kianland-users-sort/"
+      "KianlandUsersSort\\": "src"
     }
+  },
+  "require": {
+    "nesbot/carbon": "^2.66",
+    "morilog/jalali": "3.4"
+  }
+  ,
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
   }
 }

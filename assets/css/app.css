@@ -1,0 +1,22 @@
+div.dataTables_wrapper {
+    margin-bottom: 3em;
+}
+
+#users-table_wrapper {
+    margin: 1em;
+    border: 1px solid;
+    padding: 2em;
+    border-radius: 5px;
+}
+
+.fcc-btn {
+    background-color: #44863e;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.fcc-btn:hover {
+    background-color: white;
+}

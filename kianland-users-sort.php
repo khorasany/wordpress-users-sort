@@ -11,3 +11,14 @@ License: GPLv2 or later
 Text Domain: kianland-users-sort
 */
 
+require_once 'vendor/autoload.php';
+
+use KianlandUsersSort\Plugin;
+
+if ( class_exists( 'KianlandUsersSort\Plugin' ) ) {
+	$plugin = new Plugin();
+}
+
+register_activation_hook( __FILE__, [ $plugin, 'activate' ] );
+
+register_deactivation_hook( __FILE__, [ $plugin, 'deactivate' ] );
