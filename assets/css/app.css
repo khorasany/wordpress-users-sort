@@ -20,3 +20,7 @@ div.dataTables_wrapper {
 .fcc-btn:hover {
     background-color: white;
 }
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td {
+    text-align: right !important;
+}

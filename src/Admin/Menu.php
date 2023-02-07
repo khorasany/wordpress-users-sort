@@ -44,7 +44,7 @@ class Menu {
                     <td><?= $customer->ID ?></td>
                     <td><?= $customer->user_login ?></td>
                     <td><?= $meta['first_name'][0].' '. $meta['last_name'][0]?></td>
-                    <td><?= Jalalian::fromDateTime($customer->user_registered) ?></td>
+                    <td><?= Jalalian::fromDateTime($customer->user_registered)->format('Y-m-d') ?></td>
                     <td><a href="<?= site_url() ?>/wp-admin/user-edit.php?user_id=<?= $customer->ID ?>&wp_http_referer=/wordpress/wp-admin/users.php?id=<?= $customer->ID ?>" target="_blank" class="fcc-btn"><i class="wp-menu-image dashicons-before dashicons-admin-users"></i>پروفایل کاربری</a></td>
                 </tr>
 				<?php
